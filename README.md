@@ -1,4 +1,4 @@
-# react-native-collapsible
+# react-native-collapsible-updated
 
 _Animated collapsible component for React Native using the Animated API_
 
@@ -7,13 +7,13 @@ Pure JavaScript, supports dynamic content heights and components that is aware o
 ## Installation
 
 ```bash
-npm install --save react-native-collapsible
+npm install --save react-native-collapsible-updated
 ```
 
 ## Collapsible Usage
 
 ```js
-import Collapsible from 'react-native-collapsible';
+import Collapsible from 'react-native-collapsible-updated';
 
 () => (
   <Collapsible collapsed={isCollapsed}>
@@ -40,7 +40,7 @@ import Collapsible from 'react-native-collapsible';
 This is a convenience component for a common use case, see demo below.
 
 ```js
-import Accordion from 'react-native-collapsible/Accordion';
+import Accordion from 'react-native-collapsible-updated/Accordion';
 
 () => (
   <Accordion
@@ -88,7 +88,7 @@ Check full example in the `Example` folder.
 
 ```js
 import React, { Component } from 'react';
-import Accordion from 'react-native-collapsible/Accordion';
+import Accordion from 'react-native-collapsible-updated/Accordion';
 
 const SECTIONS = [
   {
@@ -196,7 +196,7 @@ To produce this (slowed down for visibility):
 
 ## Contributing
 
-Interested in contributing to this repo? Have a look at our [Contributing Guide](https://github.com/oblador/react-native-collapsible/blob/master/.github/CONTRIBUTING.MD)
+Interested in contributing to this repo? Have a look at our [Contributing Guide](https://github.com/oblador/react-native-collapsible-updated/blob/master/.github/CONTRIBUTING.MD)
 
 ## Maintainers
 
