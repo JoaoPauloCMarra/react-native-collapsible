@@ -4,6 +4,9 @@ _Animated collapsible component for React Native using the Animated API_
 
 Pure JavaScript, supports dynamic content heights and components that is aware of its `collapsed` state (good for toggling arrows etc).
 
+## Reason
+the original package has been abandoned as it seems, so I created this one to apply some necessary fixes, as for a crashfix and moving the listing to `flatlist`.
+
 ## Installation
 
 ```bash
