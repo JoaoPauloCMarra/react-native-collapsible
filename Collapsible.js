@@ -150,6 +150,7 @@ export default class Collapsible extends Component {
       toValue: height ? height : 0,
       duration,
       easing,
+      useNativeDriver: false,
     }).start(() => {
       if (this.unmounted) {
         return;

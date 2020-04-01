@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://oblador@github.com/JoaoPauloCMarra/react-native-collapsible.git"
+    "url": "https://github.com/JoaoPauloCMarra/react-native-collapsible"
   },
   "author": "Joel Arvidsson <joel@oblador.se> / JoaoPauloCMarra <joaoapaulocmarra@gmail.com>",
   "license": "MIT",
