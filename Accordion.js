@@ -131,6 +131,8 @@ export default class Accordion extends Component {
       removeClippedSubviews,
       maxToRenderPerBatch,
       initialNumToRender,
+      initialScrollIndex,
+      onScroll,
     } = this.props;
 
     const renderCollapsible = (section, key) => (
@@ -146,6 +148,8 @@ export default class Accordion extends Component {
     if (renderAsFlatList) {
       return (
         <FlatList
+          initialScrollIndex={initialScrollIndex}
+          onScroll={onScroll}
           removeClippedSubviews={removeClippedSubviews}
           maxToRenderPerBatch={maxToRenderPerBatch}
           initialNumToRender={initialNumToRender}

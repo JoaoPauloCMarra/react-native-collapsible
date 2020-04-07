@@ -144,10 +144,16 @@ export interface AccordionProps<T> {
 
   /**
    * Render the Accordion as a FlatList. Defaults to false for legacy behavior.
+   * plus FlatList props
    *
    * @default false
    */
   renderAsFlatList?: boolean;
+  initialScrollIndex?: number | null;
+  onScroll?: (event: NativeSyntheticEvent<NativeScrollEvent>) => void;
+  removeClippedSubviews?: boolean;
+  maxToRenderPerBatch?: number;
+  initialNumToRender?: numebr;
 }
 
 export default class Accordion<T> extends React.Component<AccordionProps<T>> {}
