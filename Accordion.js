@@ -33,6 +33,9 @@ export default class Accordion extends Component {
     sectionContainerStyle: ViewPropTypes.style,
     containerStyle: ViewPropTypes.style,
     renderAsFlatList: PropTypes.bool,
+    removeClippedSubviews: PropTypes.bool,
+    maxToRenderPerBatch: PropTypes.number,
+    initialNumToRender: PropTypes.number,
   };
 
   static defaultProps = {
@@ -47,6 +50,9 @@ export default class Accordion extends Component {
     numColumns: 1,
     sectionContainerStyle: {},
     renderAsFlatList: false,
+    removeClippedSubviews: false,
+    maxToRenderPerBatch: 10,
+    initialNumToRender: 10,
   };
 
   _toggleSection(section) {
@@ -122,6 +128,9 @@ export default class Accordion extends Component {
       keyExtractor,
       renderContent,
       renderAsFlatList,
+      removeClippedSubviews,
+      maxToRenderPerBatch,
+      initialNumToRender,
     } = this.props;
 
     const renderCollapsible = (section, key) => (
@@ -137,6 +146,9 @@ export default class Accordion extends Component {
     if (renderAsFlatList) {
       return (
         <FlatList
+          removeClippedSubviews={removeClippedSubviews}
+          maxToRenderPerBatch={maxToRenderPerBatch}
+          initialNumToRender={initialNumToRender}
           style={containerStyle}
           data={sections}
           extraData={activeSections}
